@@ -12,6 +12,7 @@
 		57667A85223FDCC300D2F3A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57667A83223FDCC300D2F3A7 /* Main.storyboard */; };
 		57667A87223FDCC400D2F3A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57667A86223FDCC400D2F3A7 /* Assets.xcassets */; };
 		57667A8A223FDCC400D2F3A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57667A88223FDCC400D2F3A7 /* LaunchScreen.storyboard */; };
+		57667A93223FE2A800D2F3A7 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57667A92223FE2A800D2F3A7 /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		57667A86223FDCC400D2F3A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57667A89223FDCC400D2F3A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57667A8B223FDCC400D2F3A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57667A92223FE2A800D2F3A7 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		57667A7E223FDCC300D2F3A7 /* memoirs */ = {
 			isa = PBXGroup;
 			children = (
+				57667A91223FE29600D2F3A7 /* Models */,
 				57667A7F223FDCC300D2F3A7 /* AppDelegate.swift */,
 				57667A81223FDCC300D2F3A7 /* ViewController.swift */,
 				57667A83223FDCC300D2F3A7 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				57667A8B223FDCC400D2F3A7 /* Info.plist */,
 			);
 			path = memoirs;
+			sourceTree = "<group>";
+		};
+		57667A91223FE29600D2F3A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57667A92223FE2A800D2F3A7 /* Album.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				57667A82223FDCC300D2F3A7 /* ViewController.swift in Sources */,
 				57667A80223FDCC300D2F3A7 /* AppDelegate.swift in Sources */,
+				57667A93223FE2A800D2F3A7 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
