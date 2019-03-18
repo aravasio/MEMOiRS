@@ -101,4 +101,4 @@ Carthage/Build.rbenv-vars
 
 ####
 # extras
-!*/xcuserdata/
+*xcworkspace/xcuserdata/*
