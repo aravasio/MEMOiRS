@@ -15,6 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        //Testing Requests.
+//        API.getUser(id: 1, completion: { user in
+//            print(user?.username ?? "nil user")
+//        })
+//
+//        API.getAlbums(for: 1, completion: { albums in
+//            albums.forEach { print("Album: \($0.title)") }
+//        })
+//
+//        API.getPhotos(for: 1, completion: { photos in
+//            photos.forEach { print("Photo: \($0.title)") }
+//        })
+        
         // Override point for customization after application launch.
         return true
     }

@@ -10,11 +10,11 @@ import Foundation
 import Moya
 
 /// Access point to JSONPlaceholder.
-enum JSONPlaceholderTarget: TargetType {
+enum Endpoint: TargetType {
     
     case user(id: Int?)
-    case album(userId: Int)
-    case photo(albumId: Int)
+    case allAlbums(userId: Int)
+    case allPhotos(albumId: Int)
     
     var baseURL: URL {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com") else { fatalError("baseURL could not be configured") }
@@ -26,10 +26,10 @@ enum JSONPlaceholderTarget: TargetType {
         case .user(_):
             return "/users"
             
-        case .album(_):
+        case .allAlbums(_):
             return "/albums"
             
-        case .photo(_):
+        case .allPhotos(_):
             return "/photos"
         }
     }
@@ -44,12 +44,12 @@ enum JSONPlaceholderTarget: TargetType {
             guard let id = userId else {
                 return .requestPlain
             }
-    
             return .requestCompositeData(bodyData: Data(), urlParameters: ["id":id])        
             
-        case .album(let userId):
+        case .allAlbums(let userId):
             return .requestCompositeData(bodyData: Data(), urlParameters: ["userId":userId])
-        case .photo(let albumId):
+            
+        case .allPhotos(let albumId):
             return .requestCompositeData(bodyData: Data(), urlParameters: ["albumId":albumId])
         }
     }
