@@ -16,11 +16,13 @@ enum Endpoint: TargetType {
     case allAlbums(userId: Int)
     case allPhotos(albumId: Int)
     
+    /// The target's base `URL`.
     var baseURL: URL {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com") else { fatalError("baseURL could not be configured") }
         return url
     }
     
+    /// The path to be appended to `baseURL` to form the full `URL`.
     var path: String {
         switch self {
         case .user(_):
@@ -34,10 +36,15 @@ enum Endpoint: TargetType {
         }
     }
     
+    /// The HTTP method used in the request.
     var method: Moya.Method {
         return .get
     }
     
+    /// Provides stub data for use in testing.
+    var sampleData: Data { return Data() }
+    
+    /// The type of HTTP task to be performed.
     var task: Task {
         switch self {
         case .user(let userId):
@@ -54,10 +61,7 @@ enum Endpoint: TargetType {
         }
     }
     
-    /// JSONPlaceholder uses query strings, so headers will just be nil.
+    /// The headers to be used in the request.
     var headers: [String : String]? { return nil }
-    
-    /// sampleData is the way Moya helps streamlines mocking of data. For now we'll just return Data(). If time allows for it, we can eventually implement this.
-    var sampleData: Data { return Data() }
     
 }
