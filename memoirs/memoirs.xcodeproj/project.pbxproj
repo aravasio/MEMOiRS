@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -84,6 +84,7 @@
 		57667A7E223FDCC300D2F3A7 /* memoirs */ = {
 			isa = PBXGroup;
 			children = (
+				57C8E0F62240051B00A390FA /* Networking */,
 				57667A91223FE29600D2F3A7 /* Models */,
 				57667A7F223FDCC300D2F3A7 /* AppDelegate.swift */,
 				57667A81223FDCC300D2F3A7 /* ViewController.swift */,
@@ -103,6 +104,13 @@
 				57720149223FF7D90016D60F /* Photo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		57C8E0F62240051B00A390FA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

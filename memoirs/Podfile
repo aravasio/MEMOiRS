@@ -7,6 +7,6 @@ target 'memoirs' do
 
   # Pods for memoirs
   pod 'Nuke', '~> 7.0'
-  pod 'Alamofire', '~> 5.0.0-beta.3'
+  pod 'Moya', '~> 12.0'
 
 end

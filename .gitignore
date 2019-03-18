@@ -34,7 +34,7 @@ Builds/
 
 ####
 # Xcode 4
-!xcuserdata
+xcuserdata
 !xcschemes
 # Xcode 4
 *.moved-aside
