@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Lightbox
 
 class PhotosCollectionVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     static let identifier = "PhotosCollectionVC"
@@ -31,6 +32,14 @@ class PhotosCollectionVC: UIViewController, UICollectionViewDelegate, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("did select photo")
+        
+        let photo = photos[indexPath.row]
+        
+        // Create an instance of LightboxController.
+        let controller = LightboxController(images: [LightboxImage(imageURL: photo.url, text: photo.title, videoURL: nil)])
+        controller.dynamicBackground = true
+        
+        present(controller, animated: true, completion: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
