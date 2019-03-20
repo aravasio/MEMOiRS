@@ -97,7 +97,7 @@
                                                 </imageView>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.0" green="0.19571296769999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Nvg-z6-1MB" firstAttribute="leading" secondItem="wBJ-CK-joy" secondAttribute="leading" id="E4D-B2-P4x"/>
                                             <constraint firstAttribute="trailing" secondItem="Nvg-z6-1MB" secondAttribute="trailing" id="Nfp-ol-iVh"/>
