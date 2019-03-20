@@ -31,8 +31,6 @@ class PhotosCollectionVC: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("did select photo")
-        
         let photo = photos[indexPath.row]
         
         // Create an instance of LightboxController.
