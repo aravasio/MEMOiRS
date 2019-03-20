@@ -17,6 +17,8 @@
 		57C8E0F8224007D200A390FA /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C8E0F7224007D200A390FA /* Endpoint.swift */; };
 		57C8E0FC22400D1600A390FA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C8E0FB22400D1600A390FA /* API.swift */; };
 		57C8E1282242BC2B00A390FA /* AlbumListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C8E1272242BC2B00A390FA /* AlbumListVC.swift */; };
+		57C8E12B2242CC7A00A390FA /* PotosCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C8E12A2242CC7A00A390FA /* PotosCollectionVC.swift */; };
+		57C8E1302242CF5100A390FA /* PhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C8E12F2242CF5100A390FA /* PhotosCell.swift */; };
 		A73EEEA80BC0BB347D329FA6 /* Pods_memoirs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70879E5F54AF3C0C3698F59F /* Pods_memoirs.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		57C8E0F7224007D200A390FA /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		57C8E0FB22400D1600A390FA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		57C8E1272242BC2B00A390FA /* AlbumListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListVC.swift; sourceTree = "<group>"; };
+		57C8E12A2242CC7A00A390FA /* PotosCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotosCollectionVC.swift; sourceTree = "<group>"; };
+		57C8E12F2242CF5100A390FA /* PhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCell.swift; sourceTree = "<group>"; };
 		657742162D1EA7B92C6F432E /* Pods-memoirs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoirs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-memoirs/Pods-memoirs.debug.xcconfig"; sourceTree = "<group>"; };
 		70879E5F54AF3C0C3698F59F /* Pods_memoirs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_memoirs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEE492929A282A130871B5E /* Pods-memoirs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memoirs.release.xcconfig"; path = "Pods/Target Support Files/Pods-memoirs/Pods-memoirs.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,7 +125,7 @@
 		57C8E1252242BBC500A390FA /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				57667A83223FDCC300D2F3A7 /* Main.storyboard */,
+				57C8E1292242CC2600A390FA /* PhotosList */,
 				57C8E1262242BBD900A390FA /* AlbumList */,
 			);
 			path = UI;
@@ -133,6 +137,24 @@
 				57C8E1272242BC2B00A390FA /* AlbumListVC.swift */,
 			);
 			path = AlbumList;
+			sourceTree = "<group>";
+		};
+		57C8E1292242CC2600A390FA /* PhotosList */ = {
+			isa = PBXGroup;
+			children = (
+				57667A83223FDCC300D2F3A7 /* Main.storyboard */,
+				57C8E12C2242CD7600A390FA /* Views */,
+				57C8E12A2242CC7A00A390FA /* PotosCollectionVC.swift */,
+			);
+			path = PhotosList;
+			sourceTree = "<group>";
+		};
+		57C8E12C2242CD7600A390FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57C8E12F2242CF5100A390FA /* PhotosCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +272,11 @@
 				57667A95223FEEE800D2F3A7 /* User.swift in Sources */,
 				57667A80223FDCC300D2F3A7 /* AppDelegate.swift in Sources */,
 				57667A93223FE2A800D2F3A7 /* Album.swift in Sources */,
+				57C8E12B2242CC7A00A390FA /* PotosCollectionVC.swift in Sources */,
 				57C8E0F8224007D200A390FA /* Endpoint.swift in Sources */,
 				5772014A223FF7D90016D60F /* Photo.swift in Sources */,
 				57C8E0FC22400D1600A390FA /* API.swift in Sources */,
+				57C8E1302242CF5100A390FA /* PhotosCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
