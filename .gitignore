@@ -67,7 +67,7 @@ profile
 
 ####
 # CocoaPods
-Pods/
+!Pods/
 !Podfile
 !Podfile.lock
 !xcschememanagement
