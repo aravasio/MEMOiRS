@@ -125,6 +125,7 @@
 		57C8E1252242BBC500A390FA /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				57667A83223FDCC300D2F3A7 /* Main.storyboard */,
 				57C8E1292242CC2600A390FA /* PhotosList */,
 				57C8E1262242BBD900A390FA /* AlbumList */,
 			);
@@ -142,7 +143,6 @@
 		57C8E1292242CC2600A390FA /* PhotosList */ = {
 			isa = PBXGroup;
 			children = (
-				57667A83223FDCC300D2F3A7 /* Main.storyboard */,
 				57C8E12C2242CD7600A390FA /* Views */,
 				57C8E12A2242CC7A00A390FA /* PotosCollectionVC.swift */,
 			);
