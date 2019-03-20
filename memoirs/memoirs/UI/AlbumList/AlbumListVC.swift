@@ -57,7 +57,8 @@ class AlbumListVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = PhotosCollectionVC.create()
+        let album = albums[indexPath.row]
+        let vc = PhotosCollectionVC.create(for: album)
         navigationController?.pushViewController(vc, animated: true)
     }
     

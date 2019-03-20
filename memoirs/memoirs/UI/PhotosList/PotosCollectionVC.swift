@@ -16,6 +16,7 @@ class PhotosCollectionVC: UIViewController, UICollectionViewDelegate, UICollecti
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var album: Album!
     var photos: [Photo] = []
     
     override func viewDidLoad() {
@@ -23,6 +24,8 @@ class PhotosCollectionVC: UIViewController, UICollectionViewDelegate, UICollecti
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -37,9 +40,10 @@ class PhotosCollectionVC: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     
-    class func create() -> PhotosCollectionVC {
+    class func create(for album: Album) -> PhotosCollectionVC {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: PhotosCollectionVC.identifier) as! PhotosCollectionVC
+        vc.album = album
         return vc
     }
 }
